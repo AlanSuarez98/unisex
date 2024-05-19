@@ -5,7 +5,7 @@ const path = require("path");
 const app = express();
 
 // Endpoint para obtener los datos de las remeras
-app.get("/api/remeras", (req, res) => {
+app.get("https://unisex-backend.onrender.com/api/remeras", (req, res) => {
   const dataPath = path.join(__dirname, "Remeras.json");
   fs.readFile(dataPath, "utf8", (err, data) => {
     if (err) {
