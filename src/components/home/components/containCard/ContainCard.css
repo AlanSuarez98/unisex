@@ -1,0 +1,7 @@
+.containCard {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  grid-gap: 15px;
+  justify-content: center;
+}

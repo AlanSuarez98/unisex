@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Akshar:wght@300..700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --fontPrimary: "Akshar", sans-serif;
+  --wieghtPrimaryBold: 700;
+  --wieghtPrimaryRegular: 525;
+  --wieghtPrimaryLighter: 300;
+  --fontSecondary: Calibri, sans-serif;
+}
