@@ -35,7 +35,7 @@ const Tutorial = () => {
           <h1 className="titleCardTuto" id="title2">
             Whatsapp
           </h1>
-          <h3>Hace click en el botón de whatsapp</h3>
+          <h3>Haz clic en el botón de WhatsApp</h3>
         </div>
 
         <div className="cardTutorial">

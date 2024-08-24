@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "nombre": "Camiseta Call of Duty",
+    "imagenUrl": "https://acdn.mitiendanube.com/stores/001/642/173/products/buzo-hoodie-puma-francia11-e2ee4f9c42b8cf49e816621306345556-640-0.jpg",
+    "descripcion": "Camiseta oficial de Call of Duty, cómoda y perfecta para fans del juego.",
+    "talles": ["S", "M", "L", "XL"],
+    "precio": 29.99
+  },
+  {
+    "id": 2,
+    "nombre": "Gorra Fortnite",
+    "imagenUrl": "https://acdn.mitiendanube.com/stores/001/642/173/products/buzo-hoodie-puma-francia11-e2ee4f9c42b8cf49e816621306345556-640-0.jpg",
+    "descripcion": "Gorra de Fortnite con diseño exclusivo, ideal para cualquier ocasión.",
+    "talles": ["Unico"],
+    "precio": 19.99
+  },
+  {
+    "id": 3,
+    "nombre": "Sudadera Bloodstrike",
+    "imagenUrl": "https://acdn.mitiendanube.com/stores/001/642/173/products/buzo-hoodie-puma-francia11-e2ee4f9c42b8cf49e816621306345556-640-0.jpg",
+    "descripcion": "Sudadera con capucha de Bloodstrike, suave y abrigada para el invierno.",
+    "talles": ["M", "L", "XL"],
+    "precio": 49.99
+  },
+  {
+    "id": 4,
+    "nombre": "Pantalones AceForce 2",
+    "imagenUrl": "https://acdn.mitiendanube.com/stores/001/642/173/products/buzo-hoodie-puma-francia11-e2ee4f9c42b8cf49e816621306345556-640-0.jpg",
+    "descripcion": "Pantalones de AceForce 2, diseñados para la comodidad en cada movimiento.",
+    "talles": ["S", "M", "L"],
+    "precio": 39.99
+  },
+  {
+    "id": 5,
+    "nombre": "Mochila Gamer",
+    "imagenUrl": "https://acdn.mitiendanube.com/stores/001/642/173/products/buzo-hoodie-puma-francia11-e2ee4f9c42b8cf49e816621306345556-640-0.jpg",
+    "descripcion": "Mochila resistente con compartimentos para todos tus gadgets de gaming.",
+    "talles": ["Unico"],
+    "precio": 59.99
+  },
+  {
+    "id": 6,
+    "nombre": "Camiseta Call of Duty",
+    "imagenUrl": "https://afaar.vtexassets.com/arquivos/ids/156682/IQ0809_FC_eCom.jpg?v=638466268853470000",
+    "descripcion": "Camiseta oficial de Call of Duty, cómoda y perfecta para fans del juego.",
+    "talles": ["S", "M", "L", "XL"],
+    "precio": 29.99
+  },
+  {
+    "id": 7,
+    "nombre": "Gorra Fortnite",
+    "imagenUrl": "https://afaar.vtexassets.com/arquivos/ids/156682/IQ0809_FC_eCom.jpg?v=638466268853470000",
+    "descripcion": "Gorra de Fortnite con diseño exclusivo, ideal para cualquier ocasión.",
+    "talles": ["Unico"],
+    "precio": 19.99
+  },
+  {
+    "id": 8,
+    "nombre": "Sudadera Bloodstrike",
+    "imagenUrl": "https://afaar.vtexassets.com/arquivos/ids/156682/IQ0809_FC_eCom.jpg?v=638466268853470000",
+    "descripcion": "Sudadera con capucha de Bloodstrike, suave y abrigada para el invierno.",
+    "talles": ["M", "L", "XL"],
+    "precio": 49.99
+  },
+  {
+    "id": 9,
+    "nombre": "Pantalones AceForce 2",
+    "imagenUrl": "https://afaar.vtexassets.com/arquivos/ids/156682/IQ0809_FC_eCom.jpg?v=638466268853470000",
+    "descripcion": "Pantalones de AceForce 2, diseñados para la comodidad en cada movimiento.",
+    "talles": ["S", "M", "L"],
+    "precio": 39.99
+  },
+  {
+    "id": 10,
+    "nombre": "Mochila Gamer",
+    "imagenUrl": "https://afaar.vtexassets.com/arquivos/ids/156682/IQ0809_FC_eCom.jpg?v=638466268853470000",
+    "descripcion": "Mochila resistente con compartimentos para todos tus gadgets de gaming.",
+    "talles": ["Unico"],
+    "precio": 59.99
+  }
+]

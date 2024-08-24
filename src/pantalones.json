@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "nombre": "Camiseta Call of Duty",
+    "imagenUrl": "https://ss456.liverpool.com.mx/sm/1093133585.jpg",
+    "descripcion": "Camiseta oficial de Call of Duty, cómoda y perfecta para fans del juego.",
+    "talles": ["S", "M", "L", "XL"],
+    "precio": 29.99
+  },
+  {
+    "id": 2,
+    "nombre": "Gorra Fortnite",
+    "imagenUrl": "https://ss456.liverpool.com.mx/sm/1093133585.jpg",
+    "descripcion": "Gorra de Fortnite con diseño exclusivo, ideal para cualquier ocasión.",
+    "talles": ["Unico"],
+    "precio": 19.99
+  },
+  {
+    "id": 3,
+    "nombre": "Sudadera Bloodstrike",
+    "imagenUrl": "https://ss456.liverpool.com.mx/sm/1093133585.jpg",
+    "descripcion": "Sudadera con capucha de Bloodstrike, suave y abrigada para el invierno.",
+    "talles": ["M", "L", "XL"],
+    "precio": 49.99
+  },
+  {
+    "id": 4,
+    "nombre": "Pantalones AceForce 2",
+    "imagenUrl": "https://ss456.liverpool.com.mx/sm/1093133585.jpg",
+    "descripcion": "Pantalones de AceForce 2, diseñados para la comodidad en cada movimiento.",
+    "talles": ["S", "M", "L"],
+    "precio": 39.99
+  },
+  {
+    "id": 5,
+    "nombre": "Pantalones AceForce 2",
+    "imagenUrl": "https://ss456.liverpool.com.mx/sm/1093133585.jpg",
+    "descripcion": "Pantalones de AceForce 2, diseñados para la comodidad en cada movimiento.",
+    "talles": ["S", "M", "L"],
+    "precio": 39.99
+  }
+]

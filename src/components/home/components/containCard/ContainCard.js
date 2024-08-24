@@ -1,17 +1,21 @@
+import { Link } from "react-router-dom";
 import CardItems from "../../../cardItems/CardItems";
 import "./ContainCard.css";
 
-const ContainCard = ({ items }) => {
+const ContainCard = ({ items, name }) => {
   return (
     <div className="containCard">
       {items.slice(0, 4).map((item, index) => (
-        <CardItems
-          title={item.Nombre}
-          description={item.Descripcion}
-          image={item.Imagen}
-          talles={item.Talles.join(" - ")}
-          key={index}
-        />
+        <Link to={`/${name}/${item.id}`}>
+          <CardItems
+            title={item.nombre}
+            description={item.Descripcion}
+            image={item.imagenUrl}
+            talles={item.talles.join(" - ")}
+            price={item.precio}
+            key={index}
+          />
+        </Link>
       ))}
     </div>
   );

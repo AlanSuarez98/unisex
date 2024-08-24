@@ -1,5 +1,5 @@
 import "./Header.css";
-import wallpaper from "../../../../assets/fondoHeader.png";
+import wallpaper from "../../../../assets/fondoHeader.webp";
 
 const Header = () => {
   return (

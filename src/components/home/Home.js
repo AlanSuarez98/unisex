@@ -1,4 +1,6 @@
+import Footer from "../footer/Footer";
 import Nav from "../nav/Nav";
+import Payment from "../payment/Payment";
 import "./Home.css";
 import Header from "./components/header/Header";
 import Main from "./components/main/Main";
@@ -11,6 +13,8 @@ const Home = () => {
       <Header />
       <Tutorial />
       <Main />
+      <Payment />
+      <Footer />
     </>
   );
 };

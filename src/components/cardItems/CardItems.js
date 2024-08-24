@@ -1,6 +1,6 @@
 import "./CardItems.css";
 
-const CardItems = ({ title, image, description, talles }) => {
+const CardItems = ({ title, image, description, talles, price }) => {
   return (
     <>
       <div className="card">
@@ -13,7 +13,8 @@ const CardItems = ({ title, image, description, talles }) => {
           {description}
           <div className="author">
             {" "}
-            Talle: <span className="name">{talles}</span>
+            <h3>Talle: {talles}</h3>
+            <h3>${price}</h3>
           </div>
         </div>
       </div>

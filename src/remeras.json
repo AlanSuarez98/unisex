@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "nombre": "Camiseta Call of Duty",
+    "imagenUrl": "https://acdn.mitiendanube.com/stores/001/333/138/products/rem-rojo1-3c3a10a972a3f9e21e16957472045682-240-0.png",
+    "descripcion": "Camiseta oficial de Call of Duty, cómoda y perfecta para fans del juego.",
+    "talles": ["S", "M", "L", "XL"],
+    "precio": 29.99
+  },
+  {
+    "id": 2,
+    "nombre": "Gorra Fortnite",
+    "imagenUrl": "https://acdn.mitiendanube.com/stores/001/333/138/products/rem-rojo1-3c3a10a972a3f9e21e16957472045682-240-0.png",
+    "descripcion": "Gorra de Fortnite con diseño exclusivo, ideal para cualquier ocasión.",
+    "talles": ["Unico"],
+    "precio": 19.99
+  },
+  {
+    "id": 3,
+    "nombre": "Sudadera Bloodstrike",
+    "imagenUrl": "https://acdn.mitiendanube.com/stores/001/333/138/products/rem-rojo1-3c3a10a972a3f9e21e16957472045682-240-0.png",
+    "descripcion": "Sudadera con capucha de Bloodstrike, suave y abrigada para el invierno.",
+    "talles": ["M", "L", "XL"],
+    "precio": 49.99
+  },
+  {
+    "id": 4,
+    "nombre": "Pantalones AceForce 2",
+    "imagenUrl": "https://acdn.mitiendanube.com/stores/001/333/138/products/rem-rojo1-3c3a10a972a3f9e21e16957472045682-240-0.png",
+    "descripcion": "Pantalones de AceForce 2, diseñados para la comodidad en cada movimiento.",
+    "talles": ["S", "M", "L"],
+    "precio": 39.99
+  },
+  {
+    "id": 5,
+    "nombre": "Mochila Gamer",
+    "imagenUrl": "https://acdn.mitiendanube.com/stores/001/333/138/products/rem-rojo1-3c3a10a972a3f9e21e16957472045682-240-0.png",
+    "descripcion": "Mochila resistente con compartimentos para todos tus gadgets de gaming.",
+    "talles": ["Unico"],
+    "precio": 59.99
+  }
+]
