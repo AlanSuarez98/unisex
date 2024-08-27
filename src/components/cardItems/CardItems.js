@@ -13,8 +13,8 @@ const CardItems = ({ title, image, description, talles, price }) => {
           {description}
           <div className="author">
             {" "}
-            <h3>Talle: {talles}</h3>
-            <h3>${price}</h3>
+            <h3>{talles}</h3>
+            <h3>{price}</h3>
           </div>
         </div>
       </div>

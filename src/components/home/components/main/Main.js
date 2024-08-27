@@ -1,14 +1,33 @@
 import "./Main.css";
 import ContainCard from "../containCard/ContainCard";
-import remeras from "../../../../remeras.json";
-import pantalones from "../../../../pantalones.json";
-import camperas from "../../../../camperas-buzos.json";
-import buzos from "../../../../camperas-buzos.json";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { obtenerProductos } from "../../../api/Api";
 
 const Main = () => {
-  const jackets = camperas.slice().reverse();
+  const [remeras, setRemeras] = useState([]);
+  const [buzos, setBuzos] = useState([]);
+  const [camperas, setCamperas] = useState([]);
+  const [pantalones, setPantalones] = useState([]);
+
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const cargarProductos = async () => {
+      const productos = await obtenerProductos();
+      setRemeras(
+        productos.filter((producto) => producto.categoria === "Remera")
+      );
+      setBuzos(productos.filter((producto) => producto.categoria === "Buzo"));
+      setCamperas(
+        productos.filter((producto) => producto.categoria === "Campera")
+      );
+      setPantalones(
+        productos.filter((producto) => producto.categoria === "Pantalon")
+      );
+    };
+    cargarProductos();
+  }, []);
 
   const handleTshirt = () => {
     navigate("/remeras");
@@ -19,6 +38,7 @@ const Main = () => {
   const handleJacketsDivers = () => {
     navigate("/camperas-buzos");
   };
+
   return (
     <div className="main">
       <div className="containRemeras">
@@ -37,7 +57,7 @@ const Main = () => {
           Ver todo
         </button>
       </h2>
-      <ContainCard items={buzos} name={"camperas-buzos"} />
+      <ContainCard items={buzos} name={"buzos"} />
       <br />
       <h2>
         Camperas <span></span>
@@ -45,7 +65,7 @@ const Main = () => {
           Ver todo
         </button>
       </h2>
-      <ContainCard items={jackets} name={"camperas-buzos"} />
+      <ContainCard items={camperas} name={"camperas"} />
       <br />
       <h2>
         Pantalones <span></span>

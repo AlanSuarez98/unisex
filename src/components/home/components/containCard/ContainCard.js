@@ -11,7 +11,7 @@ const ContainCard = ({ items, name }) => {
             title={item.nombre}
             description={item.Descripcion}
             image={item.imagenUrl}
-            talles={item.talles.join(" - ")}
+            talles={item.talles}
             price={item.precio}
             key={index}
           />
