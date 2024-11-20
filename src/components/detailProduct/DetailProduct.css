@@ -1,70 +1,148 @@
-.main-detail {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  padding: 50px 0;
-}
-.product {
-  width: 80%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.img-product img {
-  height: 350px;
-}
-.text-product {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: start;
-  height: 350px;
-}
-.text-product h2 {
-  font-size: 2.5rem;
-}
-.text-product p span {
-  font-weight: bold;
-}
-.buttonBuy {
-  position: relative;
-  top: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 15px;
-  gap: 15px;
-  background-color: #181717;
-  outline: 3px #181717 solid;
-  outline-offset: -3px;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-  transition: 400ms;
+@media (max-width: 425px) {
+  .main-detail {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 50px 0;
+  }
+  .product {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .img-product img {
+    height: 350px;
+  }
+  .text-product {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    height: 350px;
+    max-height: fit-content;
+    margin: 0 0 50px 0;
+  }
+  .text-product h2 {
+    font-size: 2rem;
+  }
+  .text-product p span {
+    font-weight: bold;
+  }
+  .buttonBuy {
+    position: relative;
+    top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    gap: 15px;
+    background-color: #181717;
+    outline: 3px #181717 solid;
+    outline-offset: -3px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 400ms;
+  }
+
+  .buttonBuy .textBuy {
+    color: white;
+    font-weight: 700;
+    font-size: 1em;
+    transition: 400ms;
+  }
+
+  .buttonBuy svg path {
+    transition: 400ms;
+  }
+
+  .buttonBuy:hover {
+    background-color: transparent;
+  }
+
+  .buttonBuy:hover .textBuy {
+    color: #181717;
+  }
+
+  .buttonBuy:hover svg path {
+    fill: #181717;
+  }
 }
 
-.buttonBuy .textBuy {
-  color: white;
-  font-weight: 700;
-  font-size: 1em;
-  transition: 400ms;
-}
+@media (min-width: 769px) {
+  .main-detail {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 50px 0;
+  }
+  .product {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .img-product img {
+    height: 350px;
+  }
+  .text-product {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    height: 350px;
+  }
+  .text-product h2 {
+    font-size: 2.5rem;
+  }
+  .text-product p span {
+    font-weight: bold;
+  }
+  .buttonBuy {
+    position: relative;
+    top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    gap: 15px;
+    background-color: #181717;
+    outline: 3px #181717 solid;
+    outline-offset: -3px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 400ms;
+  }
 
-.buttonBuy svg path {
-  transition: 400ms;
-}
+  .buttonBuy .textBuy {
+    color: white;
+    font-weight: 700;
+    font-size: 1em;
+    transition: 400ms;
+  }
 
-.buttonBuy:hover {
-  background-color: transparent;
-}
+  .buttonBuy svg path {
+    transition: 400ms;
+  }
 
-.buttonBuy:hover .textBuy {
-  color: #181717;
-}
+  .buttonBuy:hover {
+    background-color: transparent;
+  }
 
-.buttonBuy:hover svg path {
-  fill: #181717;
+  .buttonBuy:hover .textBuy {
+    color: #181717;
+  }
+
+  .buttonBuy:hover svg path {
+    fill: #181717;
+  }
 }

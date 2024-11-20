@@ -1,7 +1,48 @@
-.containCard {
-  width: 80%;
-  display: grid;
-  grid-template-columns: repeat(4, 250px);
-  grid-gap: 15px;
-  justify-content: center;
+@media (max-width: 425px) {
+  .containCard {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(1, 250px);
+    grid-gap: 15px;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 426px) and (max-widht: 768px) {
+  .containCard {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    grid-gap: 15px;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .containCard {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    grid-gap: 15px;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .containCard {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    grid-gap: 15px;
+    justify-content: center;
+  }
+}
+@media (min-width: 1441px) {
+  .containCard {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    grid-gap: 15px;
+    justify-content: center;
+  }
 }

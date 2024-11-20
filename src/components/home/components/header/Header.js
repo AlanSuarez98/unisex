@@ -8,7 +8,6 @@ const Header = () => {
       <div className="textHeader">
         <h1>UNISEX</h1>
         <h2>INDUMENTARIA</h2>
-        <button>Catálogo</button>
       </div>
     </div>
   );

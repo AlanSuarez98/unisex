@@ -1,11 +1,36 @@
+import { useState, useEffect } from "react";
+import api from "../../../api/Api"; // Ajusta la ruta según tu estructura de carpetas
 import CardItems from "../../../cardItems/CardItems";
 import "./MainProduct.css";
 import remera from "../../../../assets/iconRemera.png";
 import pantalones from "../../../../assets/iconPantalon.png";
 import campera from "../../../../assets/iconCampera.png";
 import { Link } from "react-router-dom";
+import Loader from "../../../loader/Loader";
 
-const MainProduct = ({ items, title }) => {
+const MainProduct = ({ title }) => {
+  const [items, setItems] = useState([]); // Para almacenar los productos
+  const [loading, setLoading] = useState(true); // Para manejar el estado de carga
+  const [error, setError] = useState(null); // Para manejar errores en la solicitud
+
+  // Función para obtener los productos
+  const fetchProducts = async () => {
+    try {
+      const products = await api.obtenerProductos(); // Obtener los productos del backend
+      setItems(products);
+      setLoading(false);
+    } catch (error) {
+      setError("Error al obtener los productos");
+      setLoading(false);
+    }
+  };
+
+  // Llamar a fetchProducts cuando el componente se monte
+  useEffect(() => {
+    fetchProducts();
+  }, []); // La dependencia vacía [] asegura que solo se ejecute una vez al montar el componente
+
+  // Determinar el ícono y la URL en base al título
   let imgTitle;
   let urlName;
   if (title.toLowerCase() === "remeras") {
@@ -20,6 +45,27 @@ const MainProduct = ({ items, title }) => {
   } else {
     imgTitle = "";
   }
+
+  // Filtrar los productos según la categoría
+  const filteredItems = items.filter((item) => {
+    if (title.toLowerCase() === "remeras") {
+      return item.categoria === "Remera";
+    } else if (title.toLowerCase() === "pantalones") {
+      return item.categoria === "Pantalon";
+    } else if (title.toLowerCase() === "camperas - buzos") {
+      return item.categoria === "Campera" || item.categoria === "Buzo";
+    }
+    return item.categoria.toLowerCase() === title.toLowerCase();
+  });
+
+  if (loading) {
+    return <Loader />; // Muestra un mensaje mientras carga
+  }
+
+  if (error) {
+    return <p>{error}</p>; // Muestra un mensaje si hay un error
+  }
+
   return (
     <div className="main-product">
       <h2>
@@ -27,18 +73,21 @@ const MainProduct = ({ items, title }) => {
         <img src={imgTitle} alt="icon categoria" />
       </h2>
       <div className="container-product">
-        {items.map((item, index) => (
-          <Link to={`/${urlName}/${item.id}`}>
-            <CardItems
-              title={item.nombre}
-              description={item.Descripcion}
-              image={item.imagenUrl}
-              talles={item.talles.join(" - ")}
-              price={item.precio}
-              key={index}
-            />
-          </Link>
-        ))}
+        {filteredItems.length > 0 ? (
+          filteredItems.map((item) => (
+            <Link to={`/${urlName}/${item.id}`} key={item.id}>
+              <CardItems
+                title={item.nombre}
+                description={item.Descripcion}
+                image={item.imagenUrl}
+                talles={item.talles}
+                price={item.precio}
+              />
+            </Link>
+          ))
+        ) : (
+          <p>No se encontraron productos.</p> // Mensaje si no hay productos
+        )}
       </div>
       <div className="box-pagination">
         <button className="buttonLeft">

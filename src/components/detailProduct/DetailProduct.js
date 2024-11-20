@@ -1,34 +1,50 @@
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Footer from "../footer/Footer";
 import Nav from "../nav/Nav";
 import Payment from "../payment/Payment";
 import "./DetailProduct.css";
-import remeras from "../../remeras.json";
-import pantalones from "../../pantalones.json";
-import camperasBuzos from "../../camperas-buzos.json";
+import api from "../api/Api";
+import Loader from "../loader/Loader";
 
 const DetailProduct = () => {
-  const { id, producto } = useParams();
+  const { id } = useParams();
+  const [product, setProduct] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
-  let productData;
+  useEffect(() => {
+    const fetchProduct = async () => {
+      try {
+        setLoading(true);
+        const fetchedProduct = await api.obtenerProductoPorId(id);
+        if (!fetchedProduct) {
+          setError("Producto no encontrado");
+        } else {
+          setProduct(fetchedProduct);
+        }
+      } catch (error) {
+        setError("Error al cargar el producto");
+      } finally {
+        setLoading(false);
+      }
+    };
 
-  // Cargar el JSON correspondiente según el producto
-  if (producto === "remeras") {
-    productData = remeras;
-  } else if (producto === "pantalones") {
-    productData = pantalones;
-  } else if (producto === "camperas-buzos") {
-    productData = camperasBuzos;
-  } else {
-    productData = [];
+    fetchProduct();
+  }, [id]);
+
+  if (loading) {
+    return <Loader />;
   }
 
-  // Buscar el producto por su id
-  const product = productData.find((item) => item.id === parseInt(id));
+  if (error) {
+    return <p>{error}</p>;
+  }
 
   if (!product) {
     return <p>Producto no encontrado</p>;
   }
+
   return (
     <>
       <Nav />
@@ -40,8 +56,8 @@ const DetailProduct = () => {
           <div className="text-product">
             <h2>{product.nombre}</h2>
             <p>{product.descripcion}</p>
-            <p>Talles: {product.talles.join(" - ")}</p>
-            <p>Precio: ${product.precio}</p>
+            <p>Talles: {product.talles}</p>
+            <p>Precio: {product.precio}</p>
             <button className="buttonBuy">
               <svg
                 viewBox="0 0 16 16"

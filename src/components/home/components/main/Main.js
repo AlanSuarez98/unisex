@@ -2,29 +2,37 @@ import "./Main.css";
 import ContainCard from "../containCard/ContainCard";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { obtenerProductos } from "../../../api/Api";
+import api from "../../../api/Api"; // Asegúrate de importar correctamente
+import Loader from "../../../loader/Loader";
 
 const Main = () => {
   const [remeras, setRemeras] = useState([]);
   const [buzos, setBuzos] = useState([]);
   const [camperas, setCamperas] = useState([]);
   const [pantalones, setPantalones] = useState([]);
+  const [loading, setLoading] = useState(true); // Estado para manejar la carga
 
   const navigate = useNavigate();
 
   useEffect(() => {
     const cargarProductos = async () => {
-      const productos = await obtenerProductos();
-      setRemeras(
-        productos.filter((producto) => producto.categoria === "Remera")
-      );
-      setBuzos(productos.filter((producto) => producto.categoria === "Buzo"));
-      setCamperas(
-        productos.filter((producto) => producto.categoria === "Campera")
-      );
-      setPantalones(
-        productos.filter((producto) => producto.categoria === "Pantalon")
-      );
+      try {
+        const productos = await api.obtenerProductos(); // Usamos la función que ya has creado
+        setRemeras(
+          productos.filter((producto) => producto.categoria === "Remera")
+        );
+        setBuzos(productos.filter((producto) => producto.categoria === "Buzo"));
+        setCamperas(
+          productos.filter((producto) => producto.categoria === "Campera")
+        );
+        setPantalones(
+          productos.filter((producto) => producto.categoria === "Pantalon")
+        );
+      } catch (error) {
+        console.error("Error al cargar los productos:", error);
+      } finally {
+        setLoading(false); // Después de cargar, quitamos el loading
+      }
     };
     cargarProductos();
   }, []);
@@ -38,6 +46,10 @@ const Main = () => {
   const handleJacketsDivers = () => {
     navigate("/camperas-buzos");
   };
+
+  if (loading) {
+    return <Loader />; // Puedes poner un spinner o algo visual mientras cargan los datos
+  }
 
   return (
     <div className="main">
