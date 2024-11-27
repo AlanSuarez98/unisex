@@ -90,7 +90,6 @@
     border: 1px solid white;
     color: white;
   }
-
   .instagram:hover {
     background-color: #c13584 !important;
     transition: 0.2s ease-in-out;
@@ -122,14 +121,12 @@
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.5s ease, visibility 0.5s ease;
-    z-index: 1000; /* Asegúrate de que el botón esté siempre encima del contenido */
+    z-index: 1000;
   }
-
   .to-top.show {
     opacity: 0.7;
     visibility: visible;
   }
-
   .to-top:hover {
     opacity: 1;
   }
@@ -225,7 +222,6 @@
     border: 1px solid white;
     color: white;
   }
-
   .instagram:hover {
     background-color: #c13584 !important;
     transition: 0.2s ease-in-out;
@@ -257,14 +253,12 @@
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.5s ease, visibility 0.5s ease;
-    z-index: 1000; /* Asegúrate de que el botón esté siempre encima del contenido */
+    z-index: 1000;
   }
-
   .to-top.show {
     opacity: 0.7;
     visibility: visible;
   }
-
   .to-top:hover {
     opacity: 1;
   }
@@ -360,7 +354,6 @@
     border: 1px solid white;
     color: white;
   }
-
   .instagram:hover {
     background-color: #c13584 !important;
     transition: 0.2s ease-in-out;
@@ -392,14 +385,12 @@
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.5s ease, visibility 0.5s ease;
-    z-index: 1000; /* Asegúrate de que el botón esté siempre encima del contenido */
+    z-index: 1000;
   }
-
   .to-top.show {
     opacity: 0.7;
     visibility: visible;
   }
-
   .to-top:hover {
     opacity: 1;
   }

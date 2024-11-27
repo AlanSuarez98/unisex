@@ -1,124 +1,65 @@
+/* Estilos comunes */
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 50px 0;
+}
+
+.main h2 {
+  width: 80%;
+  text-align: start;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main h2 span {
+  height: 1px;
+  margin: 0 0 0 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.containRemeras {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnAll {
+  background-color: transparent;
+  padding: 2.5px 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btnAll:hover {
+  background-color: rgb(80, 80, 80);
+  color: white;
+  transition: 0.2s ease-in-out all;
+}
+
+/* Responsive: Mobile (max-width: 425px) */
 @media (max-width: 425px) {
-  .main {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 0 50px 0;
-  }
-  .main h2 {
-    width: 80%;
-    text-align: start;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
   .main h2 span {
-    height: 1px;
     width: 25%;
-    margin: 0 0 0 15px;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  .containRemeras {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .btnAll {
-    background-color: transparent;
-    padding: 2.5px 5px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  .btnAll:hover {
-    background-color: rgb(80, 80, 80);
-    color: white;
-    transition: 0.2s ease-in-out all;
   }
 }
 
+/* Responsive: Tablets y laptops pequeñas (min-width: 1025px y max-width: 1440px) */
 @media (min-width: 1025px) and (max-width: 1440px) {
-  .main {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 0 50px 0;
-  }
-  .main h2 {
-    width: 80%;
-    text-align: start;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
   .main h2 span {
-    height: 1px;
     width: 80%;
-    margin: 0 0 0 15px;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  .containRemeras {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .btnAll {
-    background-color: transparent;
-    padding: 2.5px 5px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  .btnAll:hover {
-    background-color: rgb(80, 80, 80);
-    color: white;
-    transition: 0.2s ease-in-out all;
   }
 }
+
+/* Responsive: Laptops grandes y superiores (min-width: 1441px) */
 @media (min-width: 1441px) {
-  .main {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 0 50px 0;
-  }
-  .main h2 {
-    width: 80%;
-    text-align: start;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
   .main h2 span {
-    height: 1px;
     width: 80%;
-    margin: 0 0 0 15px;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  .containRemeras {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .btnAll {
-    background-color: transparent;
-    padding: 2.5px 5px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  .btnAll:hover {
-    background-color: rgb(80, 80, 80);
-    color: white;
-    transition: 0.2s ease-in-out all;
   }
 }

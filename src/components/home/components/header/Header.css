@@ -1,210 +1,104 @@
 @import "../../../../index.css";
 
+/* Estilos base */
+.header {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.header img {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.textHeader {
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+
+.textHeader h1 {
+  font-family: var(--fontPrimary);
+  letter-spacing: 10px;
+  font-weight: var(--wieghtPrimaryBold);
+}
+
+.textHeader h2 {
+  font-family: var(--fontSecondary);
+  font-weight: lighter;
+  letter-spacing: 10px;
+}
+
+.textHeader button {
+  margin: 25px 0 0 0;
+  font-size: 1.5rem;
+  padding: 5px 15px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Estilos responsivos */
 @media (max-width: 425px) {
-  .header {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-  }
-  .header img {
-    width: 100%;
-    position: relative;
-    z-index: 1;
-  }
   .textHeader {
-    position: relative;
-    z-index: 2;
     top: -225px;
     left: 10px;
-    color: white;
   }
+
   .textHeader h1 {
-    font-family: var(--fontPrimary);
     font-size: 2.5rem;
-    letter-spacing: 10px;
-    font-weight: var(--wieghtPrimaryBold);
   }
+
   .textHeader h2 {
-    font-family: var(--fontSecondary);
-    font-weight: lighter;
     font-size: 1rem;
-    letter-spacing: 10px;
-  }
-  .textHeader button {
-    margin: 25px 0 0 0;
-    font-size: 1.5rem;
-    padding: 5px 15px;
-    background-color: transparent;
-    border: 1px solid white;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
   }
 }
 
 @media (min-width: 426px) and (max-width: 768px) {
-  .header {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-  }
-  .header img {
-    width: 100%;
-    position: relative;
-    z-index: 1;
-  }
   .textHeader {
-    position: relative;
-    z-index: 2;
     top: -350px;
     left: 100px;
-    color: white;
   }
+
   .textHeader h1 {
-    font-family: var(--fontPrimary);
     font-size: 3.5rem;
-    letter-spacing: 10px;
-    font-weight: var(--wieghtPrimaryBold);
   }
+
   .textHeader h2 {
-    font-family: var(--fontSecondary);
-    font-weight: lighter;
     font-size: 1rem;
-    letter-spacing: 10px;
-  }
-  .textHeader button {
-    margin: 25px 0 0 0;
-    font-size: 1.5rem;
-    padding: 5px 15px;
-    background-color: transparent;
-    border: 1px solid white;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
   }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-  .header {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-  }
-  .header img {
-    width: 100%;
-    position: relative;
-    z-index: 1;
-  }
   .textHeader {
-    position: relative;
-    z-index: 2;
     top: -550px;
     left: 150px;
-    color: white;
   }
+
   .textHeader h1 {
-    font-family: var(--fontPrimary);
     font-size: 4.5rem;
-    letter-spacing: 10px;
-    font-weight: var(--wieghtPrimaryBold);
   }
+
   .textHeader h2 {
-    font-family: var(--fontSecondary);
-    font-weight: lighter;
     font-size: 1.5rem;
-    letter-spacing: 10px;
-  }
-  .textHeader button {
-    margin: 25px 0 0 0;
-    font-size: 1.5rem;
-    padding: 5px 15px;
-    background-color: transparent;
-    border: 1px solid white;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
   }
 }
 
-@media (min-width: 1025px) and (max-width: 1440px) {
-  .header {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-  }
-  .header img {
-    width: 100%;
-    position: relative;
-    z-index: 1;
-  }
+@media (min-width: 1025px) {
   .textHeader {
-    position: relative;
-    z-index: 2;
     top: -550px;
     left: 150px;
-    color: white;
   }
+
   .textHeader h1 {
-    font-family: var(--fontPrimary);
     font-size: 4.5rem;
-    letter-spacing: 10px;
-    font-weight: var(--wieghtPrimaryBold);
   }
+
   .textHeader h2 {
-    font-family: var(--fontSecondary);
-    font-weight: lighter;
     font-size: 1.5rem;
-    letter-spacing: 10px;
-  }
-  .textHeader button {
-    margin: 25px 0 0 0;
-    font-size: 1.5rem;
-    padding: 5px 15px;
-    background-color: transparent;
-    border: 1px solid white;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-}
-@media (min-width: 1441px) {
-  .header {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-  }
-  .header img {
-    width: 100%;
-    position: relative;
-    z-index: 1;
-  }
-  .textHeader {
-    position: relative;
-    z-index: 2;
-    top: -550px;
-    left: 150px;
-    color: white;
-  }
-  .textHeader h1 {
-    font-family: var(--fontPrimary);
-    font-size: 4.5rem;
-    letter-spacing: 10px;
-    font-weight: var(--wieghtPrimaryBold);
-  }
-  .textHeader h2 {
-    font-family: var(--fontSecondary);
-    font-weight: lighter;
-    font-size: 1.5rem;
-    letter-spacing: 10px;
-  }
-  .textHeader button {
-    margin: 25px 0 0 0;
-    font-size: 1.5rem;
-    padding: 5px 15px;
-    background-color: transparent;
-    border: 1px solid white;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
   }
 }

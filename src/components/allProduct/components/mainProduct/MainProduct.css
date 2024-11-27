@@ -1,3 +1,4 @@
+/* Mobile (max-width: 425px) */
 @media (max-width: 425px) {
   .main-product {
     width: 100%;
@@ -7,6 +8,7 @@
     justify-content: center;
     align-items: center;
   }
+
   .main-product h2 {
     margin: 35px 0;
     font-size: 2.3rem;
@@ -22,10 +24,12 @@
     align-items: center;
     overflow: hidden;
   }
+
   .main-product h2 img {
     height: 75%;
     filter: invert(1);
   }
+
   .container-product {
     width: 100%;
     display: grid;
@@ -34,6 +38,7 @@
     justify-content: center;
     align-items: center;
   }
+
   .box-pagination {
     width: 100%;
     display: flex;
@@ -41,45 +46,16 @@
     align-items: center;
     padding: 20px 0 50px 0;
   }
+
   .box-pagination button {
     margin: 0 10px 0 0;
   }
-  .button {
-    width: 120px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 12px;
-    cursor: pointer;
-    border: 3px solid rgb(80, 80, 80);
-    background-color: rgb(80, 80, 80);
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.137);
-  }
 
-  .text {
-    width: 70%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(27, 27, 27);
-    color: white;
-  }
-
-  .arrow path {
-    fill: rgb(225, 225, 225);
-  }
-
-  .button:hover .arrow {
-    animation: slide-in-left 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  }
-
+  .button,
   .buttonLeft {
     width: 120px;
     height: 30px;
     display: flex;
-    flex-direction: row-reverse;
     align-items: center;
     justify-content: flex-start;
     gap: 12px;
@@ -89,6 +65,7 @@
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.137);
   }
 
+  .text,
   .textLeft {
     width: 70%;
     height: 100%;
@@ -99,10 +76,14 @@
     color: white;
   }
 
+  .arrow path,
   .arrowLeft path {
-    transform: rotate(180deg);
-    transform-origin: center;
     fill: rgb(225, 225, 225);
+  }
+
+  .button:hover .arrow,
+  .buttonLeft:hover .arrowLeft {
+    animation: slide-in-left 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   }
 
   .buttonLeft:hover .arrowLeft {
@@ -114,7 +95,6 @@
       transform: translateX(-8px);
       opacity: 0;
     }
-
     100% {
       transform: translateX(0px);
       opacity: 1;
@@ -126,302 +106,28 @@
       transform: translateX(8px);
       opacity: 0;
     }
-
     100% {
       transform: translateX(0px);
       opacity: 1;
     }
   }
 
-  .button:active {
-    transform: scale(0.97);
-  }
+  .button:active,
   .buttonLeft:active {
     transform: scale(0.97);
   }
 }
+
+/* Tablet (min-width: 426px and max-width: 768px) */
 @media (min-width: 426px) and (max-width: 768px) {
-  .main-product {
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .main-product h2 {
-    margin: 35px 0;
-    font-size: 2.3rem;
-    width: 90%;
-    height: 50px;
-    background-color: rgb(80, 80, 80);
-    color: white;
-    border-radius: 10px;
-    padding: 10px 15px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    overflow: hidden;
-  }
-  .main-product h2 img {
-    height: 75%;
-    filter: invert(1);
-  }
   .container-product {
-    width: 100%;
-    display: grid;
     grid-template-columns: repeat(2, 250px);
-    grid-gap: 15px;
-    justify-content: center;
-    align-items: center;
-  }
-  .box-pagination {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0 50px 0;
-  }
-  .box-pagination button {
-    margin: 0 10px 0 0;
-  }
-  .button {
-    width: 120px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 12px;
-    cursor: pointer;
-    border: 3px solid rgb(80, 80, 80);
-    background-color: rgb(80, 80, 80);
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.137);
-  }
-
-  .text {
-    width: 70%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(27, 27, 27);
-    color: white;
-  }
-
-  .arrow path {
-    fill: rgb(225, 225, 225);
-  }
-
-  .button:hover .arrow {
-    animation: slide-in-left 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  }
-
-  .buttonLeft {
-    width: 120px;
-    height: 30px;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 12px;
-    cursor: pointer;
-    border: 3px solid rgb(80, 80, 80);
-    background-color: rgb(80, 80, 80);
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.137);
-  }
-
-  .textLeft {
-    width: 70%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(27, 27, 27);
-    color: white;
-  }
-
-  .arrowLeft path {
-    transform: rotate(180deg);
-    transform-origin: center;
-    fill: rgb(225, 225, 225);
-  }
-
-  .buttonLeft:hover .arrowLeft {
-    animation: slide-in-right 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  }
-
-  @keyframes slide-in-left {
-    0% {
-      transform: translateX(-8px);
-      opacity: 0;
-    }
-
-    100% {
-      transform: translateX(0px);
-      opacity: 1;
-    }
-  }
-
-  @keyframes slide-in-right {
-    0% {
-      transform: translateX(8px);
-      opacity: 0;
-    }
-
-    100% {
-      transform: translateX(0px);
-      opacity: 1;
-    }
-  }
-
-  .button:active {
-    transform: scale(0.97);
-  }
-  .buttonLeft:active {
-    transform: scale(0.97);
   }
 }
 
+/* Desktop (min-width: 769px) */
 @media (min-width: 769px) {
-  .main-product {
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .main-product h2 {
-    margin: 35px 0;
-    font-size: 2.3rem;
-    width: 90%;
-    height: 50px;
-    background-color: rgb(80, 80, 80);
-    color: white;
-    border-radius: 10px;
-    padding: 10px 15px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    overflow: hidden;
-  }
-  .main-product h2 img {
-    height: 75%;
-    filter: invert(1);
-  }
   .container-product {
-    width: 100%;
-    display: grid;
     grid-template-columns: repeat(4, 250px);
-    grid-gap: 15px;
-    justify-content: center;
-    align-items: center;
-  }
-  .box-pagination {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0 50px 0;
-  }
-  .box-pagination button {
-    margin: 0 10px 0 0;
-  }
-  .button {
-    width: 120px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 12px;
-    cursor: pointer;
-    border: 3px solid rgb(80, 80, 80);
-    background-color: rgb(80, 80, 80);
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.137);
-  }
-
-  .text {
-    width: 70%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(27, 27, 27);
-    color: white;
-  }
-
-  .arrow path {
-    fill: rgb(225, 225, 225);
-  }
-
-  .button:hover .arrow {
-    animation: slide-in-left 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  }
-
-  .buttonLeft {
-    width: 120px;
-    height: 30px;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 12px;
-    cursor: pointer;
-    border: 3px solid rgb(80, 80, 80);
-    background-color: rgb(80, 80, 80);
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.137);
-  }
-
-  .textLeft {
-    width: 70%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(27, 27, 27);
-    color: white;
-  }
-
-  .arrowLeft path {
-    transform: rotate(180deg);
-    transform-origin: center;
-    fill: rgb(225, 225, 225);
-  }
-
-  .buttonLeft:hover .arrowLeft {
-    animation: slide-in-right 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  }
-
-  @keyframes slide-in-left {
-    0% {
-      transform: translateX(-8px);
-      opacity: 0;
-    }
-
-    100% {
-      transform: translateX(0px);
-      opacity: 1;
-    }
-  }
-
-  @keyframes slide-in-right {
-    0% {
-      transform: translateX(8px);
-      opacity: 0;
-    }
-
-    100% {
-      transform: translateX(0px);
-      opacity: 1;
-    }
-  }
-
-  .button:active {
-    transform: scale(0.97);
-  }
-  .buttonLeft:active {
-    transform: scale(0.97);
   }
 }
