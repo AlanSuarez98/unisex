@@ -1,80 +1,78 @@
-@media (max-width: 425px) {
-  .main-contact {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    padding: 50px 0;
-    height: 400px;
-  }
+.main-contact {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 50px 0;
+  height: 400px;
+}
 
-  .main-contact p {
-    padding: 0 0 25px 0;
-    width: 90%;
-    text-align: center;
-  }
+.main-contact p {
+  padding: 0 0 25px 0;
+  width: 90%;
+  text-align: center;
+}
 
-  .cardContact {
-    width: fit-content;
-    height: fit-content;
-    background-color: rgb(238, 238, 238);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 25px;
-    gap: 20px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
-  }
+.cardContact {
+  width: fit-content;
+  height: fit-content;
+  background-color: rgb(238, 238, 238);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  gap: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+}
 
-  .socialContainer {
-    width: 40px;
-    height: 50px;
-    background-color: rgb(44, 44, 44);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    border-radius: 15px 0 15px 0;
-    cursor: pointer;
-    transition-duration: 1.2s;
-  }
+.socialContainer {
+  width: 40px;
+  height: 50px;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 15px 0 15px 0;
+  cursor: pointer;
+  transition-duration: 1.2s;
+}
 
-  .containerOne:hover {
-    background-color: #c13584;
-  }
-  .containerTwo:hover {
-    background-color: #25d366;
-  }
-  .containerThree:hover {
-    background-color: #0072b1;
-  }
+.containerOne:hover {
+  background-color: #c13584;
+}
+.containerTwo:hover {
+  background-color: #25d366;
+}
+.containerThree:hover {
+  background-color: #0072b1;
+}
 
-  .socialContainer:active {
-    transform: scale(0.9);
-  }
+.socialContainer:active {
+  transform: scale(0.9);
+}
 
-  .socialSvg {
-    width: 17px;
-    path {
-      fill: rgb(255, 255, 255);
-    }
+.socialSvg {
+  width: 17px;
+  path {
+    fill: rgb(255, 255, 255);
   }
+}
 
-  .socialContainer:hover .socialSvg {
-    animation: slide-in-top 1.2s both;
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 1.2s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
   }
-
-  @keyframes slide-in-top {
-    0% {
-      transform: translateY(-50px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
